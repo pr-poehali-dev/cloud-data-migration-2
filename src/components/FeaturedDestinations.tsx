@@ -27,7 +27,7 @@ const services = [
   {
     name: "Expense Management",
     category: "Finance",
-    image: "/kyoto-japan-traditional-temples-cherry-blossoms.jpg",
+    image: "https://cdn.poehali.dev/projects/189a2f76-f3fc-4aa1-a3fb-22789b97550a/files/e0034454-f85a-4a01-bb48-9e2b84a42839.jpg",
     description: "Automated reporting, invoice consolidation, and seamless integration with your accounting systems",
     feature: "Full Automation",
   },
