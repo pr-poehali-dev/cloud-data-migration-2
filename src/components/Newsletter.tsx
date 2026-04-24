@@ -2,15 +2,17 @@ import type React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Send } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function Newsletter() {
   const [email, setEmail] = useState("")
+  const [company, setCompany] = useState("")
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Newsletter signup:", email)
+    console.log("Demo request:", { email, company })
     setEmail("")
+    setCompany("")
   }
 
   return (
@@ -19,18 +21,26 @@ export function Newsletter() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-light tracking-tight text-balance">
-              Будьте <span className="font-semibold">в курсе</span>
+              Ready to <span className="font-semibold">get started?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
-              Подпишитесь на рассылку и получайте эксклюзивные предложения, гиды по направлениям и советы от экспертов
+              Leave your details and our team will get in touch to schedule a personalised demo for your business
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+          <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-3">
+            <Input
+              type="text"
+              placeholder="Company name"
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
+              required
+              className="h-12 rounded-full border-2 px-6"
+            />
             <div className="flex gap-3">
               <Input
                 type="email"
-                placeholder="Ваш email"
+                placeholder="Work email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -41,13 +51,13 @@ export function Newsletter() {
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 shrink-0"
               >
-                <Send className="h-5 w-5" />
+                <Icon name="Send" size={20} />
               </Button>
             </div>
           </form>
 
           <p className="text-xs text-muted-foreground">
-            Подписываясь, вы соглашаетесь с Политикой конфиденциальности и даёте согласие на получение рассылки
+            By submitting, you agree to our Privacy Policy. We'll never share your data with third parties.
           </p>
         </div>
       </div>

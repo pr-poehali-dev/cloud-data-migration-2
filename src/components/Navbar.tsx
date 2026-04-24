@@ -30,32 +30,32 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
             <a
-              href="#destinations"
+              href="#services"
               className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
             >
-              Направления
+              Services
             </a>
             <a
-              href="#packages"
+              href="#solutions"
               className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
             >
-              Туры
+              Solutions
             </a>
             <a href="#about" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors">
-              О нас
+              About
             </a>
             <a
               href="#contact"
               className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
             >
-              Контакты
+              Contact
             </a>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
-              Забронировать
+              Request a Demo
             </Button>
           </div>
 
@@ -70,20 +70,20 @@ export function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-border">
           <div className="px-6 py-6 space-y-4">
-            <a href="#destinations" className="block text-base font-medium text-foreground/70 hover:text-foreground">
-              Направления
+            <a href="#services" className="block text-base font-medium text-foreground/70 hover:text-foreground">
+              Services
             </a>
-            <a href="#packages" className="block text-base font-medium text-foreground/70 hover:text-foreground">
-              Туры
+            <a href="#solutions" className="block text-base font-medium text-foreground/70 hover:text-foreground">
+              Solutions
             </a>
             <a href="#about" className="block text-base font-medium text-foreground/70 hover:text-foreground">
-              О нас
+              About
             </a>
             <a href="#contact" className="block text-base font-medium text-foreground/70 hover:text-foreground">
-              Контакты
+              Contact
             </a>
             <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
-              Забронировать
+              Request a Demo
             </Button>
           </div>
         </div>
