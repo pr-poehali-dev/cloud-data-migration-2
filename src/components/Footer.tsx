@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold">Horizon Voyages</h3>
+            <h3 className="text-2xl font-semibold">Business Pleasure Travel</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Corporate travel management solutions for forward-thinking businesses since 2010
             </p>
@@ -63,7 +63,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© 2025 Horizon Voyages. All rights reserved.</p>
+          <p>© 2025 Business Pleasure Travel. All rights reserved.</p>
         </div>
       </div>
     </footer>
